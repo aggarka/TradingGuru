@@ -1,0 +1,31 @@
+# Compiled output
+lib/
+
+# Node modules
+node_modules/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Environment
+.env
+.env.local
+
+# Firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+firestore-debug.log
+ui-debug.log
+
+# Coverage
+coverage/
+
+# Temporary files
+*.log
+.DS_Store
+
+# Build artifacts
+*.tsbuildinfo

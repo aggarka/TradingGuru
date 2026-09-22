@@ -1,0 +1,17 @@
+# Generated build and test output
+build/
+DerivedData/
+*.xcresult/
+*.log
+node_modules/
+# Local machine files
+.DS_Store
+._*
+xcuserdata/
+# Local secrets
+.env
+.env.*
+!.env.example
+*.p12
+*.p8
+*.mobileprovision

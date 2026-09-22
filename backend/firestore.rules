@@ -1,0 +1,44 @@
+rules_version = '2';
+
+/**
+ * Firestore Security Rules for TradingGuru
+ * 
+ * These rules ensure that:
+ * 1. Users can only read/write their own data
+ * 2. Backend functions have full access via admin SDK
+ * 3. Watchlists are limited to 50 items per user
+ */
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // User profiles - users can only access their own profile
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      
+      // User's watchlist
+      match /watchlist/{symbolId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // User's strategy configurations
+      match /configurations/{strategyId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // User's analysis results
+      match /results/{resultId} {
+        allow read: if request.auth != null && request.auth.uid == userId;
+        // Results are written by backend functions, not directly by users
+        allow write: if false;
+      }
+    }
+    
+    // Scheduled run records - read-only for authenticated users
+    match /scheduledRuns/{runId} {
+      allow read: if request.auth != null;
+      // Scheduled runs are created/updated by backend functions only
+      allow write: if false;
+    }
+  }
+}

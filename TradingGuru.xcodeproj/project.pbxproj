@@ -6,20 +6,76 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		CA6652ED2FF434B400B94E9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA577CC22FF2F8C300FEBFA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA577CC92FF2F8C300FEBFA9;
+			remoteInfo = TradingGuru;
+		};
+		CA6652FA2FF434D400B94E9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA577CC22FF2F8C300FEBFA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA577CC92FF2F8C300FEBFA9;
+			remoteInfo = TradingGuru;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		CA577CCA2FF2F8C300FEBFA9 /* TradingGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6652E92FF434B400B94E9C /* TradingGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6652F62FF434D400B94E9C /* TradingGuruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingGuruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CA577CCDAAA0000000000001 /* Exceptions for "TradingGuru" folder in "TradingGuru" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CA577CC92FF2F8C300FEBFA9 /* TradingGuru */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CA577CCC2FF2F8C300FEBFA9 /* TradingGuru */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CA577CCDAAA0000000000001 /* Exceptions for "TradingGuru" folder in "TradingGuru" target */,
+			);
 			path = TradingGuru;
+			sourceTree = "<group>";
+		};
+		CA6652EA2FF434B400B94E9C /* TradingGuruTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TradingGuruTests;
+			sourceTree = "<group>";
+		};
+		CA6652F72FF434D400B94E9C /* TradingGuruUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TradingGuruUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CA577CC72FF2F8C300FEBFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6652E62FF434B400B94E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6652F32FF434D400B94E9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				CA577CCC2FF2F8C300FEBFA9 /* TradingGuru */,
+				CA6652EA2FF434B400B94E9C /* TradingGuruTests */,
+				CA6652F72FF434D400B94E9C /* TradingGuruUITests */,
 				CA577CCB2FF2F8C300FEBFA9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				CA577CCA2FF2F8C300FEBFA9 /* TradingGuru.app */,
+				CA6652E92FF434B400B94E9C /* TradingGuruTests.xctest */,
+				CA6652F62FF434D400B94E9C /* TradingGuruUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +130,52 @@
 			productReference = CA577CCA2FF2F8C300FEBFA9 /* TradingGuru.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CA6652E82FF434B400B94E9C /* TradingGuruTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6652F12FF434B400B94E9C /* Build configuration list for PBXNativeTarget "TradingGuruTests" */;
+			buildPhases = (
+				CA6652E52FF434B400B94E9C /* Sources */,
+				CA6652E62FF434B400B94E9C /* Frameworks */,
+				CA6652E72FF434B400B94E9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA6652EE2FF434B400B94E9C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CA6652EA2FF434B400B94E9C /* TradingGuruTests */,
+			);
+			name = TradingGuruTests;
+			packageProductDependencies = (
+			);
+			productName = TradingGuruTests;
+			productReference = CA6652E92FF434B400B94E9C /* TradingGuruTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA6652F52FF434D400B94E9C /* TradingGuruUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6652FC2FF434D400B94E9C /* Build configuration list for PBXNativeTarget "TradingGuruUITests" */;
+			buildPhases = (
+				CA6652F22FF434D400B94E9C /* Sources */,
+				CA6652F32FF434D400B94E9C /* Frameworks */,
+				CA6652F42FF434D400B94E9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA6652FB2FF434D400B94E9C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CA6652F72FF434D400B94E9C /* TradingGuruUITests */,
+			);
+			name = TradingGuruUITests;
+			packageProductDependencies = (
+			);
+			productName = TradingGuruUITests;
+			productReference = CA6652F62FF434D400B94E9C /* TradingGuruUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +188,14 @@
 				TargetAttributes = {
 					CA577CC92FF2F8C300FEBFA9 = {
 						CreatedOnToolsVersion = 26.4.1;
+					};
+					CA6652E82FF434B400B94E9C = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = CA577CC92FF2F8C300FEBFA9;
+					};
+					CA6652F52FF434D400B94E9C = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = CA577CC92FF2F8C300FEBFA9;
 					};
 				};
 			};
@@ -100,12 +214,28 @@
 			projectRoot = "";
 			targets = (
 				CA577CC92FF2F8C300FEBFA9 /* TradingGuru */,
+				CA6652E82FF434B400B94E9C /* TradingGuruTests */,
+				CA6652F52FF434D400B94E9C /* TradingGuruUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CA577CC82FF2F8C300FEBFA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6652E72FF434B400B94E9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6652F42FF434D400B94E9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +252,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA6652E52FF434B400B94E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6652F22FF434D400B94E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA6652EE2FF434B400B94E9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA577CC92FF2F8C300FEBFA9 /* TradingGuru */;
+			targetProxy = CA6652ED2FF434B400B94E9C /* PBXContainerItemProxy */;
+		};
+		CA6652FB2FF434D400B94E9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA577CC92FF2F8C300FEBFA9 /* TradingGuru */;
+			targetProxy = CA6652FA2FF434D400B94E9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CA577CD32FF2F8C500FEBFA9 /* Debug */ = {
@@ -249,10 +406,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TradingGuru/TradingGuru.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = XT6Y696J56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradingGuru/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -262,7 +422,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Kamal.TradingGuru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -280,10 +440,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TradingGuru/TradingGuru.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = XT6Y696J56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradingGuru/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,7 +456,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Kamal.TradingGuru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -303,6 +466,86 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA6652EF2FF434B400B94E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kamal.TradingGuruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradingGuru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TradingGuru";
+			};
+			name = Debug;
+		};
+		CA6652F02FF434B400B94E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kamal.TradingGuruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradingGuru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TradingGuru";
+			};
+			name = Release;
+		};
+		CA6652FD2FF434D400B94E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kamal.TradingGuruUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradingGuru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TradingGuru";
+			};
+			name = Debug;
+		};
+		CA6652FE2FF434D400B94E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kamal.TradingGuruUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradingGuru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TradingGuru";
 			};
 			name = Release;
 		};
@@ -323,6 +566,24 @@
 			buildConfigurations = (
 				CA577CD62FF2F8C500FEBFA9 /* Debug */,
 				CA577CD72FF2F8C500FEBFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6652F12FF434B400B94E9C /* Build configuration list for PBXNativeTarget "TradingGuruTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6652EF2FF434B400B94E9C /* Debug */,
+				CA6652F02FF434B400B94E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6652FC2FF434D400B94E9C /* Build configuration list for PBXNativeTarget "TradingGuruUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6652FD2FF434D400B94E9C /* Debug */,
+				CA6652FE2FF434D400B94E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
